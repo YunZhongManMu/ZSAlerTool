@@ -1,0 +1,6 @@
+framework module LBTestSDK {
+  umbrella header "LBTestSDK.h"
+
+  export *
+  module * { export * }
+}

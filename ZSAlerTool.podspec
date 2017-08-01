@@ -9,14 +9,16 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZSAlerTool"
-  s.version      = "0.0.2"
+  s.version      = "0.0.5"
   s.summary      = "这是一个简短的描述,不写都不行"
-  s.homepage     = "https://git.oschina.net/shunzhou/ZSAlerTool"
+  s.homepage     = "https://github.com/YunZhongManMu/ZSAlerTool"
   s.license      = "MIT"
   s.author             = { "周顺" => "yunzhong1075@126.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://git.oschina.net/shunzhou/ZSAlerTool.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/YunZhongManMu/ZSAlerTool.git", :tag => "#{s.version}" }
   s.exclude_files = "Classes/Exclude"
-  s.vendored_frameworks = 'ZSAlerTool/Frameworks/ZSTestSDK.framework'
+  s.vendored_frameworks = "ZSAlerTool/Frameworks/ZSTestSDK.framework", "ZSAlerTool/Frameworks/LBTestSDK.framework"
+  s.dependency "AFNetworking"
+  s.dependency "MJExtension"
 
 end
